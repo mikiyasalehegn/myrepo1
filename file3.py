@@ -1,0 +1,2 @@
+name = 'Killer'
+print(name)
