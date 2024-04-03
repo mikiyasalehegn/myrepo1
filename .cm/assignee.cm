@@ -13,17 +13,7 @@ automations:
     run:
       - action: add-reviewers@v1
         args:
-          reviewers: [Mengmik]
-      - action: add-comment@v1
-        args:
-          comment: |
-            The Security team has automatically been added for review because this PR contains changes to components inside `/src/app/auth`
-    if:
-      - {{ files | match(regex=r/src\/ui\/.*\.js$/) | some}}
-      run:
-      - action: add-reviewers@v1
-        args:
-          reviewers: [Mengmik]
+          reviewers: [mikoat]
       - action: add-comment@v1
         args:
           comment: |
